@@ -15,6 +15,14 @@
 		1B6C2666275E7E3A005F085E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6C2664275E7E3A005F085E /* LaunchScreen.storyboard */; };
 		1B6C269C275E8097005F085E /* NewsAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6C2698275E8061005F085E /* NewsAPI.framework */; };
 		1B6C269D275E8097005F085E /* NewsAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6C2698275E8061005F085E /* NewsAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B6C26BD27601BE1005F085E /* NewsListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C26BC27601BE1005F085E /* NewsListContracts.swift */; };
+		1B6C26BF27601CFD005F085E /* NewsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6C26BE27601CFC005F085E /* NewsList.storyboard */; };
+		1B6C26C127601DA2005F085E /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C26C027601DA1005F085E /* NewsListView.swift */; };
+		1B6C26C327608BF4005F085E /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C26C227608BF4005F085E /* NewsListViewController.swift */; };
+		1B6C26C627609056005F085E /* NewsPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C26C527609056005F085E /* NewsPresentation.swift */; };
+		1B6C26C92760A5E3005F085E /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C26C82760A5E3005F085E /* AppContainer.swift */; };
+		1B6C26CD2760A626005F085E /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C26CC2760A626005F085E /* AppRouter.swift */; };
+		1B6C26CF2760A896005F085E /* NewsListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C26CE2760A896005F085E /* NewsListBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +66,14 @@
 		1B6C2665275E7E3A005F085E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B6C2667275E7E3A005F085E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B6C2692275E8061005F085E /* NewsAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NewsAPI.xcodeproj; path = ../NewsAPI/NewsAPI.xcodeproj; sourceTree = "<group>"; };
+		1B6C26BC27601BE1005F085E /* NewsListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListContracts.swift; sourceTree = "<group>"; };
+		1B6C26BE27601CFC005F085E /* NewsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsList.storyboard; sourceTree = "<group>"; };
+		1B6C26C027601DA1005F085E /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		1B6C26C227608BF4005F085E /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		1B6C26C527609056005F085E /* NewsPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresentation.swift; sourceTree = "<group>"; };
+		1B6C26C82760A5E3005F085E /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		1B6C26CC2760A626005F085E /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		1B6C26CE2760A896005F085E /* NewsListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsListBuilder.swift; path = ../NewsListBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +109,8 @@
 		1B6C2658275E7E34005F085E /* NewsAppMVC */ = {
 			isa = PBXGroup;
 			children = (
-				1B6C2659275E7E34005F085E /* AppDelegate.swift */,
+				1B6C26B827601B86005F085E /* Scenes */,
+				1B6C26B527601B6F005F085E /* App */,
 				1B6C265B275E7E34005F085E /* SceneDelegate.swift */,
 				1B6C265D275E7E34005F085E /* ViewController.swift */,
 				1B6C265F275E7E34005F085E /* Main.storyboard */,
@@ -126,6 +143,37 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B6C26B527601B6F005F085E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1B6C2659275E7E34005F085E /* AppDelegate.swift */,
+				1B6C26C82760A5E3005F085E /* AppContainer.swift */,
+				1B6C26CC2760A626005F085E /* AppRouter.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		1B6C26B827601B86005F085E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1B6C26BB27601BC1005F085E /* NewsList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1B6C26BB27601BC1005F085E /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				1B6C26BE27601CFC005F085E /* NewsList.storyboard */,
+				1B6C26CE2760A896005F085E /* NewsListBuilder.swift */,
+				1B6C26C027601DA1005F085E /* NewsListView.swift */,
+				1B6C26BC27601BE1005F085E /* NewsListContracts.swift */,
+				1B6C26C227608BF4005F085E /* NewsListViewController.swift */,
+				1B6C26C527609056005F085E /* NewsPresentation.swift */,
+			);
+			name = NewsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +261,7 @@
 				1B6C2666275E7E3A005F085E /* LaunchScreen.storyboard in Resources */,
 				1B6C2663275E7E3A005F085E /* Assets.xcassets in Resources */,
 				1B6C2661275E7E34005F085E /* Main.storyboard in Resources */,
+				1B6C26BF27601CFD005F085E /* NewsList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B6C26C627609056005F085E /* NewsPresentation.swift in Sources */,
+				1B6C26C92760A5E3005F085E /* AppContainer.swift in Sources */,
+				1B6C26BD27601BE1005F085E /* NewsListContracts.swift in Sources */,
 				1B6C265E275E7E34005F085E /* ViewController.swift in Sources */,
+				1B6C26C127601DA2005F085E /* NewsListView.swift in Sources */,
+				1B6C26CD2760A626005F085E /* AppRouter.swift in Sources */,
+				1B6C26C327608BF4005F085E /* NewsListViewController.swift in Sources */,
 				1B6C265A275E7E34005F085E /* AppDelegate.swift in Sources */,
+				1B6C26CF2760A896005F085E /* NewsListBuilder.swift in Sources */,
 				1B6C265C275E7E34005F085E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,7 +435,6 @@
 				INFOPLIST_FILE = NewsAppMVC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -407,7 +462,6 @@
 				INFOPLIST_FILE = NewsAppMVC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

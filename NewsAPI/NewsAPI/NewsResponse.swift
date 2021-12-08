@@ -12,15 +12,12 @@ public struct NewsResponse : Decodable {
     private enum RootCodingKeys : String, CodingKey {
         case results
     }
+  
     
-    private enum FeedCodingKeys : String, CodingKey {
-        case results
-    }
-    
-    let results : [News]
+    let result : [News]
     
     public init(from decoder: Decoder) throws {
         let rootContainer = try decoder.container(keyedBy: RootCodingKeys.self)
-        self.results  = try rootContainer.decode([News].self, forKey: .results)
+        self.result  = try rootContainer.decode([News].self, forKey: .results)
     }
 }

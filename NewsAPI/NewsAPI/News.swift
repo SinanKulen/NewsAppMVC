@@ -17,3 +17,4 @@ public struct News : Decodable {
 public struct Petition : Decodable {
     public let name : String
 }
+
