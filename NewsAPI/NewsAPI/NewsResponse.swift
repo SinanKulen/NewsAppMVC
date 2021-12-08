@@ -8,11 +8,10 @@
 import Foundation
 
 public struct NewsResponse : Decodable {
-    
+  
     private enum RootCodingKeys : String, CodingKey {
         case results
     }
-  
     
     let result : [News]
     

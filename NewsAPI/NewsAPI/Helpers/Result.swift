@@ -7,8 +7,8 @@
 
 import Foundation
 
- public enum Result<Value> {
-    case success(Value)
+ public enum Result<value> {
+    case success(value)
     case failure(Error)
 }
 

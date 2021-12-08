@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1B6C265A275E7E34005F085E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C2659275E7E34005F085E /* AppDelegate.swift */; };
-		1B6C265C275E7E34005F085E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C265B275E7E34005F085E /* SceneDelegate.swift */; };
 		1B6C265E275E7E34005F085E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C265D275E7E34005F085E /* ViewController.swift */; };
 		1B6C2661275E7E34005F085E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6C265F275E7E34005F085E /* Main.storyboard */; };
 		1B6C2663275E7E3A005F085E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6C2662275E7E3A005F085E /* Assets.xcassets */; };
@@ -59,7 +58,6 @@
 /* Begin PBXFileReference section */
 		1B6C2656275E7E34005F085E /* NewsAppMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAppMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6C2659275E7E34005F085E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B6C265B275E7E34005F085E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1B6C265D275E7E34005F085E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B6C2660275E7E34005F085E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B6C2662275E7E3A005F085E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 			children = (
 				1B6C26B827601B86005F085E /* Scenes */,
 				1B6C26B527601B6F005F085E /* App */,
-				1B6C265B275E7E34005F085E /* SceneDelegate.swift */,
 				1B6C265D275E7E34005F085E /* ViewController.swift */,
 				1B6C265F275E7E34005F085E /* Main.storyboard */,
 				1B6C2662275E7E3A005F085E /* Assets.xcassets */,
@@ -281,7 +278,6 @@
 				1B6C26C327608BF4005F085E /* NewsListViewController.swift in Sources */,
 				1B6C265A275E7E34005F085E /* AppDelegate.swift in Sources */,
 				1B6C26CF2760A896005F085E /* NewsListBuilder.swift in Sources */,
-				1B6C265C275E7E34005F085E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
